@@ -1,0 +1,69 @@
+<div
+  class="modal"
+  tabindex="-1"
+  [ngClass]="{ show: modalOpen }"
+  [style.display]="modalOpen ? 'block' : 'none'"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{ name }}</h5>
+        <button
+          type="button"
+          class="btn-close button"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+          (click)="onCloseModal()"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselModal_{{index}}" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner ">
+          <ng-container *ngFor="let img of projectImg; let i = index">
+        <div class="carousel-item" [class.active]="i === 0">
+          <img src="assets/img/{{ img }}" alt="{{ img }}" class="d-block w-100" />
+        </div>
+      </ng-container>
+          </div>
+          <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#carouselModal_' + index" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#carouselModal_' + index" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <hr>
+        <div class="modal-desciption">
+          <h4>Descrição</h4>
+          <p>{{ description }}</p>
+        </div>
+        <hr>
+        <div class="modal-technologies">
+          <h4>Tecnologias</h4>
+          <ul>
+            <li *ngFor="let tool of tools">{{ tool }}</li>
+          </ul>
+        </div>
+      
+        <div class="modal-button">
+            <a href="{{link}}" type="button" class="button" >
+              <img src="assets/img/link.svg" alt="Link para o projeto">
+              <p>Link para o projeto</p>
+           </a>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn button"
+          (click)="onCloseModal()"
+        >
+          Fechar
+        </button>
+        <!-- Se precisar de mais botões no modal, adicione aqui -->
+      </div>
+    </div>
+  </div>
+</div>

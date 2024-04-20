@@ -1,0 +1,54 @@
+<h4>{{ name }}</h4>
+<div
+  class="container d-flex project-box"
+  [ngClass]="{ 'flex-row-reverse': imagePosition === 'right' }"
+>
+  <div
+    id="carouselExampleAutoplaying_{{ index }}"
+    class="carousel slide d-flex justify-content-center align-items-center"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-inner">
+      <ng-container *ngFor="let img of projectImg; let i = index">
+        <div class="carousel-item" [class.active]="i === 0">
+          <img
+            src="assets/img/{{ img }}"
+            alt="{{ img }}"
+            class="d-block w-100 carousel-img"
+          />
+        </div>
+      </ng-container>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      [attr.data-bs-target]="'#carouselExampleAutoplaying_' + index"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      [attr.data-bs-target]="'#carouselExampleAutoplaying_' + index"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="project__content">
+    
+    <p>{{ description }}</p>
+    <div class="project-box-buttons">
+      <button *ngIf="openModal" (click)="onClick()" class="button">
+        Detalhes
+      </button>
+      <a href="{{ visualization }}"
+        ><button class="button">Visualizar</button></a
+      >
+    </div>
+  </div>
+</div>

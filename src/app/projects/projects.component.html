@@ -1,0 +1,23 @@
+<div class="container-sm project-box-container" id="projects" style="scroll-margin-top: 100px;">
+    <h1>Projetos</h1>
+    <div *ngFor="let item of projects; let i = index" class="container__projects">
+        <app-project-box [name]="item.name"
+        [description]="item.description" 
+        [index]="i"
+        [projectImg]="item.projectImg"
+        [visualization]="item.visualization"
+        [imagePosition]="i % 2 === 0 ? 'left' : 'right'" [projectId]="i" (openModal)="openModal($event)"></app-project-box>
+    </div>
+</div>
+
+<app-project-modal 
+    [modalOpen]="modalOpen"
+    [index]="selectedProjectIndex"
+    [projectImg]="selectedProject?.projectImg"
+    [description]="selectedProject?.description"
+    [name]="selectedProject?.name"
+    [link]="selectedProject?.link"
+    [visualization]="selectedProject?.visualization"
+    (closeModal)="closeModal()"
+    [tools] ="selectedProject?.tools"
+></app-project-modal>

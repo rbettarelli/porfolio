@@ -1,0 +1,78 @@
+.modal-img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+ul {
+    display: flex;
+    gap: 15px;
+}
+
+li {
+    background-color: #CCCCCC !important;
+    border-radius: 1rem; 
+    color: #171717;
+    padding: 5px 10px 5px 10px;
+}
+
+.modal-body > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.modal-content {
+    background-color: #171717;
+}
+.modal-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-button > a {
+    width: 80% !important;
+    height: 50px;
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+     padding: 0 !important;
+    text-decoration: none;
+  
+
+}
+
+.modal-button > a > p {
+    padding: 0;
+    margin: 0;
+}
+
+h4::before {
+    margin-right: 10px;
+    display: inline-block;
+    content: "";
+    border-top: 0.3rem solid aliceblue !important;
+    width: 4rem;
+    transform: translateY(-0.3rem);
+}
+h4::after {
+    margin-left: 10px;
+    display: inline-block;
+    content: "";
+    border-top: 0.3rem solid aliceblue;
+    width: 4rem;
+    transform: translateY(-0.3rem);
+}
+
+.modal-desciption > h4, .modal-technologies > h4, .modal-technologies > ul  {
+    text-align: center !important;
+}
+
+.modal-technologies ul {
+    padding: 0;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }

@@ -1,1 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #171717 ;
+    color: aliceblue;
+ 
+        /* Defina o gradiente como plano de fundo */
+       
+    
+}
+
+li {
+    list-style: none;
+}
+
+.icons {
+    width: 25px;
+    height: 25px;
+
+}
+
+.active{
+    color: red;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #1F1F1F;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* Efeito Hover */
+.button:hover {
+    
+    
+    opacity: 0.8;
+    transform: translateY(-0.4rem);
+    box-shadow: rgba(0, 0, 0, 0.26) 4px 4px 5.5px;
+}
+
+/* Efeito Ativo */
+.button:active {
+    background-color: #171717;
+    color: #999999;
+}
+
+/* Ícone dentro do botão */
+.button i {
+    vertical-align: middle;
+    margin-right: 5px; /* Ajuste conforme necessário */
+}

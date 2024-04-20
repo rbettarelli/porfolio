@@ -1,0 +1,24 @@
+.about-box {
+    padding-top: 20px;
+    height: 80vh auto;
+    background-color: #1F1F1F;
+    border-radius: 30px;
+    margin-bottom: 50px;
+    width: 85%;
+   
+}
+
+.about-box__content {
+    display: flex;
+    width: 99%;
+    height: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-left: .2rem solid #fff;
+    padding-left: 2rem;
+    
+    
+    
+}
+

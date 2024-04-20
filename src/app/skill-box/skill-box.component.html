@@ -1,0 +1,10 @@
+<div class="skill-list">
+    <h2>{{ title }}</h2>
+    <ul>
+      <li *ngFor="let skill of skills">
+        <img src="{{ skill.icon }}" class="icons" alt="{{ skill.name }} icon">
+        <span>{{ skill.name }}</span>
+        
+      </li>
+    </ul>
+  </div>

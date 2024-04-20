@@ -1,0 +1,19 @@
+.container__projects {
+    margin-top: 60px;
+
+    
+}
+
+.project-box-container {
+    background-color: #1F1F1F;
+    border-radius: 30px;
+    width: 85%;
+    margin-top: 40px;
+    
+}
+.project-box-container > h1 {
+    text-align: center;
+    padding-top: 20px;
+
+}
+

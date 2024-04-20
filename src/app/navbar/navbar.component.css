@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+a {
+  color: aliceblue;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.btn-custom {
+    background-color: #1f1f1f; /* Defina sua cor personalizada aqui */
+    border: #1f1f1f;
+  }
+
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.logo-area > p {
+    margin-top: 7px;
+    font-family: 'Livvic', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    
+}
+.navbar-collapse {
+  justify-content: flex-end !important;
+}
+
+.bg-body-tertiary {
+  background-color: #1f1f1f !important;
+}
+
+.navbar {
+    
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  width: 85% !important;
+  z-index: 1000;
+  max-width: 1575px !important;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.nav-link:hover {
+  color: GRAY;
+}
+
+.nav-link.active {
+  /* Estilos para o item da navbar ativo */
+  font-weight: bold;
+  color: gray;
+}
+
+

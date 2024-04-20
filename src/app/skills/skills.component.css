@@ -1,0 +1,17 @@
+.skill-box {
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+.skill-container {
+    
+    background-color: #1F1F1F;
+    border-radius: 30px;
+    width: 85%;
+    padding-bottom: 10px;
+}
+
+.skill-container > h1 {
+    text-align: center;
+    padding-top: 20px;
+}

@@ -1,0 +1,27 @@
+h4::before {
+    margin-right: 10px;
+    display: inline-block;
+    content: "";
+    border-top: 0.3rem solid aliceblue !important;
+    width: 4rem;
+    transform: translateY(-0.3rem);
+}
+h4::after {
+    margin-left: 10px;
+    display: inline-block;
+    content: "";
+    border-top: 0.3rem solid aliceblue;
+    width: 4rem;
+    transform: translateY(-0.3rem);
+}
+
+p {
+    min-height: 10px !important;
+}
+
+.footer_container {
+    padding: 50px;
+    background-color: #1F1F1F;
+    border-radius: 80px 80px 0 0 / 40px 40px 0 0;
+    width: 85%;
+}
